@@ -1,0 +1,41 @@
+body {
+  padding: 20px;
+  font-family: Roboto;
+}
+
+#awesome-tabs {
+  width: 500px;
+}
+
+.tabs-header .item {
+  border: 1px solid #CCCCCC;
+  background: #E4E4E4;
+  box-sizing: border-box;
+  padding: 10px;
+  float: left;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.tabs-header .item.active {
+  background: #0275D8;
+  color: #FFFFFF;
+}
+
+.tabs-header:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.tabs-container .item {
+  border: 1px solid #CCCCCC;
+  box-sizing: border-box;
+  padding: 20px;
+  display: none;
+}
+
+.tabs-container .item.active {
+  display: block;
+}
